@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>レイアウトシフトサンプル</title>
+  </head>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    ul {
+      padding-left: 2rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+      margin-inline: auto;
+    }
+
+    .col {
+      flex-basis: 300px;
+    }
+
+    .col:nth-of-type(3) img {
+      aspect-ratio: 3/2;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="col">
+        <ul>
+          <li>width,height: なし</li>
+          <li>aspect-ratio: なし</li>
+        </ul>
+        <img src="./img/dog1.jpg" alt="わんこ" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+        <img src="./img/dog2.jpg" alt="わんこ" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+        <img src="./img/dog3.jpg" alt="わんこ" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+      </div>
+      <div class="col">
+        <ul>
+          <li>width,height: あり</li>
+          <li>aspect-ratio: なし</li>
+        </ul>
+        <img src="./img/dog4.jpg" alt="わんこ" width="300" height="200" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+        <img src="./img/dog5.jpg" alt="わんこ" width="300" height="200" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+        <img src="./img/dog6.jpg" alt="わんこ" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+      </div>
+      <div class="col">
+        <ul>
+          <li>width,height: なし</li>
+          <li>aspect-ratio: あり</li>
+        </ul>
+        <img src="./img/dog7.jpg" alt="わんこ" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+        <img src="./img/dog8.jpg" alt="わんこ" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+        <img src="./img/dog9.jpg" alt="わんこ" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus, perferendis soluta maiores earum nesciunt accusamus aperiam tempore itaque officiis excepturi assumenda perspiciatis quae amet nam et ratione? Aliquam, perspiciatis!</p>
+      </div>
+    </div>
+  </body>
+</html>
